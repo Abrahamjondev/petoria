@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from '../auth/auth.module';
 import { MemberModule } from '../member/member.module';
 import { BoardArticleModule } from '../board-article/board-article.module';
-import { PropertyModule } from '../property/property.module';
+import { ProductModule } from '../product/product.module';
 import CommentSchema from '../../schemas/Comment.model';
 
 @Module({
@@ -19,7 +19,7 @@ import CommentSchema from '../../schemas/Comment.model';
 		AuthModule,
 		BoardArticleModule,
 		MemberModule,
-		PropertyModule,
+		ProductModule,
 	],
 	providers: [CommentResolver, CommentService],
 })
