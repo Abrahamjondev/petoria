@@ -1,0 +1,5 @@
+{
+	"extends": "./tsconfig.json", // tsc (TypeScript compiler) ishga tushganda shu faylni o'qiydi, keyin yozilgan qoidalar asosida dist papkasiga compile qiladi.
+	"exclude": ["node_modules", "test", "dist", "**/*spec.ts"] // Compile qilishda qaysi papka/fayllarni o'tkazib yuborish kerakligini belgilaydi: ularni compile qilma"
+	//  Production uchun build qilganda test fayllar (test, *.spec.ts), tayyor kod (dist) va tashqi kutubxonalar (node_modules) compile qilinmasin, faqat asosiy kod compile qilinsin deb belgilaydi. Asosiy tsconfig.json dagi barcha sozlamalarni o'zida saqlaydi, faqat shu chiqarib tashlash qoidasini qo'shadi.
+}

@@ -1,0 +1,38 @@
+import { registerEnumType } from '@nestjs/graphql';
+
+export enum ProductType {
+	PET = 'PET',
+	FOOD = 'FOOD',
+	TOY = 'TOY',
+	ACCESSORY = 'ACCESSORY',
+}
+registerEnumType(ProductType, {
+	name: 'ProductType',
+});
+
+export enum ProductStatus {
+	ACTIVE = 'ACTIVE',
+	SOLD = 'SOLD',
+	DELETE = 'DELETE',
+}
+registerEnumType(ProductStatus, {
+	name: 'ProductStatus',
+});
+
+export enum ProductSpecies {
+	DOG = 'DOG',
+	CAT = 'CAT',
+	BIRD = 'BIRD',
+	FISH = 'FISH',
+}
+registerEnumType(ProductSpecies, {
+	name: 'ProductSpecies',
+});
+
+export enum ProductGender {
+	MALE = 'MALE',
+	FEMALE = 'FEMALE',
+}
+registerEnumType(ProductGender, {
+	name: 'ProductGender',
+});
